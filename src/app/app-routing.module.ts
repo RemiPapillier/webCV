@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CVComponent } from './cv/cv.component';
-import { HomeComponent } from './home/home.component';
+import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'cv', component: CVComponent}
+  {path: '', component: AppComponent},
+  {path: 'cv', component: AppComponent}
 ];
 
 @NgModule({

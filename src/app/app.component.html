@@ -9,7 +9,7 @@
 <ul class="nav nav-pills center-pills" id="pills-tab" role="tablist">
   <li class="nav-main-item">
     <a class="nav-link-logo" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-      aria-controls="pills-home" aria-selected="true"><img src="../assets/images/avatar.png" style="width: 100px;height:110px"></a>
+      aria-controls="pills-home" aria-selected="true"><img src="../assets/images/logo-RP.png" style="width: 90px;height:70px"></a>
   </li>
   <li class="nav-item">
     <a class="nav-link" id="pills-experiences-tab" data-toggle="pill" href="#pills-experiences" role="tab"
@@ -34,6 +34,42 @@
 </ul>
 <!-- PILL -->
 
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a class="navbar-brand" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"><img src="../assets/images/logo-RP.png" style="width: 90px;height:70px"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+      aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item-s">
+            <a class="nav-link" id="pills-experiences-tab" data-toggle="pill" href="footer/footer.component.html" role="tab"
+            aria-controls="pills-experiences">Expériences</a>           
+        </li>
+        <li class="nav-item-s">
+            <a class="nav-link" id="pills-formations-tab" data-toggle="pill" href="#pills-formations" role="tab"
+            aria-controls="pills-formations">Formations</a>
+        </li>
+        <li class="nav-item-s">
+            <a class="nav-link" id="pills-competences-tab" data-toggle="pill" href="#pills-competences" role="tab"
+            aria-controls="pills-competences">Compétences</a>
+        </li>
+        <li class="nav-item-s">
+            <a class="nav-link" id="pills-projets-tab" data-toggle="pill" href="#pills-projets" role="tab"
+            aria-controls="pills-projets">Projets</a>
+        </li>
+        <li class="nav-item-s">
+            <a class="nav-link" id="pills-propos-tab" data-toggle="pill" href="#pills-propos" role="tab"
+            aria-controls="pills-propos">À propos</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- NAVBAR -->
 
 <!-- DIVIDER -->
 <svg class="editorial"
@@ -49,7 +85,7 @@ d="M-160 44c30 0
 v44h-352z" />
 </defs>
 <g class="parallax1">
-<use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
+<use xlink:href="#gentle-wave" x="50" y="3" fill="#f6d365"/>
 </g>
 <g class="parallax2">
 <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
@@ -70,13 +106,13 @@ v44h-352z" />
     <app-cv></app-cv>
   </div>
   <div class="tab-pane fade" id="pills-experiences" role="tabpanel" aria-labelledby="pills-experiences-tab">
-    <app-footer></app-footer>
+    <app-experience></app-experience>
   </div>
   <div class="tab-pane fade" id="pills-formations" role="tabpanel" aria-labelledby="pills-formations-tab">
     <app-footer></app-footer>
   </div>
   <div class="tab-pane fade" id="pills-competences" role="tabpanel" aria-labelledby="pills-competences-tab">
-
+    <app-menu></app-menu>
   </div>
   <div class="tab-pane fade" id="pills-projets" role="tabpanel" aria-labelledby="pills-projets-tab">
     <app-cv></app-cv>

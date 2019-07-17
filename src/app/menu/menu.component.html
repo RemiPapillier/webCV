@@ -1,38 +1,49 @@
-<ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-</ul>
+<!--Navbar-->
+<nav class="navbar">
 
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
   
-<svg class="editorial"
-viewBox="0 24 150 30 "
-preserveAspectRatio="none">
-<defs>
-<path id="gentle-wave"
-d="M-160 44c30 0 
-58-18 88-18s
-58 18 88 18 
-58-18 88-18 
-58 18 88 18
-v44h-352z" />
-</defs>
-<g class="parallax1">
-<use xlink:href="#gentle-wave" x="50" y="3" fill="#f461c1"/>
-</g>
-<g class="parallax2">
-<use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
-</g>
- <g class="parallax3">
-<use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
-</g>
-<g class="parallax4">
-<use xlink:href="#gentle-wave" x="50" y="6" fill="#fff"/>  
-</g>
-</svg>
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+      aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../../app/app.component.html/#pills-home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../app/app.component.html/#pills-formation">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
+      <!-- Links -->
+  
+    </div>
+    <!-- Collapsible content -->
+  
+  </nav>
+  <!--/.Navbar-->
+
+  <div class="bs-example">
+      <nav class="nav nav-pills flex-column">
+          <a href="#" class="nav-item nav-link active">
+              <i class="fa fa-home"></i> Home
+          </a>
+          <a href="#" class="nav-item nav-link">
+              <i class="fa fa-user"></i> Profile
+          </a>
+          <a href="#" class="nav-item nav-link">
+              <i class="fa fa-envelope"></i> Messages
+          </a>
+          <a href="#" class="nav-item nav-link disabled" tabindex="-1">
+              <i class="fa fa-line-chart"></i> Reports
+          </a>
+      </nav>
+  </div>

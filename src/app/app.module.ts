@@ -8,13 +8,23 @@ import { CVComponent } from './cv/cv.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { FormationComponent } from './formation/formation.component';
+import { CompetenceComponent } from './competence/competence.component';
+import { ProposComponent } from './propos/propos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CVComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    HomeComponent,
+    ExperienceComponent,
+    FormationComponent,
+    CompetenceComponent,
+    ProposComponent
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,12 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
+
+@font-face{
+    font-family:Lobster;
+    src: url('assets/fonts/Lobster-Regular.ttf') format ('truetype');
+}
+
 html, body { 
     height: 100%; 
 }

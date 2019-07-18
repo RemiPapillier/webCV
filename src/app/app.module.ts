@@ -13,6 +13,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { FormationComponent } from './formation/formation.component';
 import { CompetenceComponent } from './competence/competence.component';
 import { ProposComponent } from './propos/propos.component';
+import { ReserveComponent } from './reserve/reserve.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProposComponent } from './propos/propos.component';
     ExperienceComponent,
     FormationComponent,
     CompetenceComponent,
-    ProposComponent
+    ProposComponent,
+    ReserveComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,55 @@
-@media screen and (min-width: 1100px){
-  .navbar{
-    display: none;
-  }
+.nav{
+    background-color:rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    min-height: 55px;
+    z-index: 5;
 }
 
-.navbar .navbar-toggler-icon {
-  background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=6a1b9a');
+.nav-item{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1%;
+    margin-left: 1%;
 }
+
+.nav-link{
+    font-size: 1.6vw;
+    color: #C5F1FF;
+}
+
+.nav-item-burger{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin-right:auto;
+    margin-left: auto;
+    position: relative;
+    text-align: right;
+}
+
+.nav-link-burger{
+    font-size: 4vh;
+    color: #C5F1FF;
+}
+
+.navbar{
+    background-color:rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 768px){
+    .nav{
+      display:none;
+    }
+    
+    }
+    
+    @media screen and (min-width: 768px){
+    .navbar{
+      display: none;
+    }
+    }
+/*.logo{
+    position:relative;
+    padding-right: 100px;
+}*/

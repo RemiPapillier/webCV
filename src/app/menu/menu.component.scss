@@ -2,8 +2,8 @@
     background-color:rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
-    height: 10vh;
-    min-height: 55px;
+    height: 11vh;
+    min-height: 60px;
     z-index: 5;
 }
 
@@ -14,42 +14,83 @@
     margin-left: 1%;
 }
 
-.nav-link{
-    font-size: 1.6vw;
-    color: #C5F1FF;
+.logo{
+    position:relative;
+    padding-right: 40px;
 }
 
+.nav-link{
+    font-size: 1.7vw;
+    color: #FFF;
+}
+
+
 .nav-item-burger{
-    margin-top: 1.5%;
+    margin-top: 0.5%;
     margin-bottom: 1.5%;
+    padding-top: 1%;
     margin-right:auto;
     margin-left: auto;
     position: relative;
-    text-align: right;
+    text-align: center;
 }
 
+
 .nav-link-burger{
-    font-size: 4vh;
-    color: #C5F1FF;
+    font-size: 3.5vh;
+    color: #FFF;
 }
 
 .navbar{
     background-color:rgba(0,0,0,0.5);
 }
 
+.navbar .navbar-toggler-icon {
+    background-image: url(../../assets/images/hamburger1.svg);
+}
+
+
 @media screen and (max-width: 768px){
     .nav{
       display:none;
-    }
+    } 
+}
     
-    }
-    
-    @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
     .navbar{
       display: none;
     }
-    }
-/*.logo{
-    position:relative;
-    padding-right: 100px;
-}*/
+}
+
+.active-link-cyan{
+    color: #31BCCC;
+}
+.active-link-lightblue{
+    color: rgb(193, 239, 255);
+}
+.active-link-darkblue{
+    color: #4669a5;
+}
+.active-link-yellow{
+    color: #FFDD83;
+}
+
+
+.nav-link-burger:hover{
+    text-decoration: none;
+}
+.exp:hover{
+    color: #4669a5;
+}
+
+.form:hover{
+    color: rgb(193, 239, 255);
+}
+
+.prop:hover{
+    color: #31BCCC;
+}
+
+.comp:hover{
+    color: #FFDD83;
+}

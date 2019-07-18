@@ -1,10 +1,8 @@
-.navbar .nav-pills >li >a {
-    color: #005580;
- }
-   .navbar .nav-pills > li > a:hover {
-      background-color: #0088cc;
- }
- .navbar .nav-pills .active > a {
-    background-color:#ccc;
-    color:#0088cc;
+section{
+   background-image: url('../../assets/images/fond-bleu-fonce.jpg');
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: 1;
 }

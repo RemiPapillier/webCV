@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import {MDBBootstrapModule } from 'angular-bootstrap-md';
+import { RouterModule, Routes} from '@angular/router';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,17 @@ import { FormationComponent } from './formation/formation.component';
 import { CompetenceComponent } from './competence/competence.component';
 import { ProposComponent } from './propos/propos.component';
 import { ReserveComponent } from './reserve/reserve.component';
+
+
+const routes: Routes = [
+  { path: '', redirectTo: 'cv', pathMatch: 'full' },
+  { path: 'cv', component: HomeComponent },
+  { path: 'experiences', component: ExperienceComponent },
+  { path: 'formations', component: FormationComponent },
+  { path: 'competences', component: CompetenceComponent },
+  { path: 'apropos', component: ProposComponent }
+];
+
 
 @NgModule({
   declarations: [
@@ -31,6 +43,7 @@ import { ReserveComponent } from './reserve/reserve.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot(routes),
     MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule
   ],
@@ -40,4 +53,6 @@ import { ReserveComponent } from './reserve/reserve.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {
+ }

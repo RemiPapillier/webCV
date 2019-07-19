@@ -1,7 +1,11 @@
 <!-- NAVBAR -->
 <ul class="nav">
     <li class="nav-item">
-        <a class="nav-link logo" routerLink="/cv"><img src="../../assets/images/logo-RP.png" style="width: 45px; height: 45px;"></a>
+        <a class="nav-link logo" routerLink="/cv"><img src="../../assets/images/logo-RP.png"
+                style="width: 45px; height: 45px;"></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link prop" routerLink="/apropos" routerLinkActive="active-link-cyan">À propos</a>
     </li>
     <li class="nav-item">
         <a class="nav-link exp" routerLink="/experiences" routerLinkActive="active-link-darkblue">Expériences</a>
@@ -12,34 +16,36 @@
     <li class="nav-item">
         <a class="nav-link comp" routerLink="/competences" routerLinkActive="active-link-yellow">Compétences</a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link prop" routerLink="/apropos" routerLinkActive="active-link-cyan">À propos</a>
-    </li>
 </ul>
 <!-- NAVBAR -->
 
 <!-- BURGER MENU -->
 <nav class="navbar">
-    <a class="navbar-brand" routerLink="/cv"><img src="../../assets/images/logo-RP.png" style="width:45px; height: 45px;"></a>
+    <a class="navbar-brand" routerLink="/cv"><img src="../../assets/images/logo-RP.png"
+            style="width:45px; height: 45px;"></a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item-burger">
-                <a class="nav-link-burger exp" routerLink="/experiences" routerLinkActive="active-link-darkblue">Expériences</a>
-            </li>
-            <li class="nav-item-burger">
-                <a class="nav-link-burger form" routerLink="/formations" routerLinkActive="active-link-lightblue">Formations</a>
-            </li>
-            <li class="nav-item-burger">
-                <a class="nav-link-burger comp" routerLink="/competences" routerLinkActive="active-link-yellow">Compétences</a>
-            </li>
-            <li class="nav-item-burger">
                 <a class="nav-link-burger prop" routerLink="/apropos" routerLinkActive="active-link-cyan">À propos</a>
             </li>
+            <li class="nav-item-burger">
+                <a class="nav-link-burger exp" routerLink="/experiences"
+                    routerLinkActive="active-link-darkblue">Expériences</a>
+            </li>
+            <li class="nav-item-burger">
+                <a class="nav-link-burger form" routerLink="/formations"
+                    routerLinkActive="active-link-lightblue">Formations</a>
+            </li>
+            <li class="nav-item-burger">
+                <a class="nav-link-burger comp" routerLink="/competences"
+                    routerLinkActive="active-link-yellow">Compétences</a>
+            </li>
+
         </ul>
     </div>
 </nav>

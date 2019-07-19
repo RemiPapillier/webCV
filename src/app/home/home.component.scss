@@ -2,51 +2,126 @@
 section{
     background-image: url('../../assets/images/background-remi.jpg');
     height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
 }
 
-.col{
-    margin-top: 2%;
-}
-@media screen and (max-width: 768px){
-    section{
-        background-image: url('../../assets/images/background-portrait.jpg');
-    } 
-}
-
-
 .container{
     position: relative;
     width:70%;
-    height: 16vh;
+    height: 22%;
     border-radius: 10px;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.4);
     transition: all .5s ease-in-out;
-    margin: 3% 3% 3% 3%;
-    box-shadow: 5px -5px 10px rgba(0,0,0,0.8);
+    margin: 2% 2% 3% 2%;
+    padding:2%;
+    cursor: pointer;
+}
+
+.c-left{
+    padding-left:3%;
+}
+.c-right{
+    padding-right:3%;
+}
+
+.title{
+    height: 100%;
+    line-height: 100%;
+    max-width: 70%;
+    padding:0;
+    margin:0;
+}
+.right{
+    padding-left:45%;
+}
+/*.subtitle{
+    height:40%;
+    max-width: 70%;
+    padding:0;
+    margin:0;
+}*/
+
+h1{
+    font-family:  comfortaa;
+    color: #FFF;
+    text-align: center;
+    font-size:1.8vw;
+}
+/*h2{
+    font-family: roboto;
+    font-weight: 400;
+    color:#FFF;
+    text-align: center;
+    font-size:1.5vw;
+    margin:0
+}*/
+
+.row{
+    height:80%;
+}
+.row-content{
+    height:100%;
+}
+
+.col{
+    margin-top:2%;
+    height: 100%;
+}
+
+.anim-logo{
+    height:100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.logo-e{
+    background-image: url("../../assets/images/logo-experiences.png");
+    background-position: left;
+}
+.logo-f{
+    background-image: url("../../assets/images/logo-formations.png");
+    background-position: right;
+}
+.logo-c{
+    background-image: url("../../assets/images/logo-competences.png");
+    background-position: left;
+}
+.logo-p{
+    background-image: url("../../assets/images/logo-a-propos.png");
+    background-position: right;
+}
+
+@media screen and (max-width: 768px){
+    section{
+        background-image: url('../../assets/images/background-portrait.jpg');
+    }
+    h1{
+        font-size:3vh;
+    } 
 }
 
 .container:hover{
-    transform: translate(5px,-5px);
+    transform: translate(4px,-4px);
 }
 
 .experiences{
-    border: 1.5px solid #4669a5;
+    box-shadow: 5px -5px 10px #4669a5;
 }
 
 .formations{
-    border: 1.5px solid rgb(193, 239, 255);
-    margin-left:30%;
+    margin-left:27%;
+    box-shadow: 5px -5px 10px rgb(193, 239, 255);
 }
 
 .competences{
-    border: 1.5px solid #FFDD83;
+    box-shadow: 5px -5px 10px #FFDD83;
 }
 
 .apropos{
-    border: 1.5px solid #31BCCC;
-    margin-left:30%;
+    margin-left: 27%;
+    box-shadow: 5px -5px 10px #31BCCC;
 }
+

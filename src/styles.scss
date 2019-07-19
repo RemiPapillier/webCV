@@ -3,15 +3,18 @@
 
 
 @font-face{
-    font-family: 'lobster';
-    src: url('assets/fonts/Lobster-Regular.ttf') format('truetype');
+    font-family: 'comfortaa';
+    src: url('assets/fonts/comfortaa-semibold.ttf') format('truetype');
 }
 
 html, body { 
     height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body {
-    margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif; 
 }

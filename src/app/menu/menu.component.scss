@@ -1,8 +1,8 @@
+
 .nav{
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.4);
     display: flex;
     justify-content: center;
-    height: 11vh;
     min-height: 60px;
     z-index: 5;
 }
@@ -20,7 +20,8 @@
 }
 
 .nav-link{
-    font-size: 1.7vw;
+    font-family: comfortaa;
+    font-size: 1.5vw;
     color: #FFF;
 }
 
@@ -37,31 +38,38 @@
 
 
 .nav-link-burger{
-    font-size: 3.5vh;
+    font-family: comfortaa;
+    font-size: 3vh;
     color: #FFF;
 }
 
 .navbar{
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.4);
 }
 
 .navbar .navbar-toggler-icon {
     background-image: url(../../assets/images/hamburger1.svg);
 }
 
+.navbar-brand{
+    padding-left:5%;
+}
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 940px){
     .nav{
       display:none;
     } 
 }
     
-@media screen and (min-width: 768px){
+@media screen and (min-width: 940px){
     .navbar{
       display: none;
     }
 }
 
+.colapse:active{
+    background-color: red;
+}
 .active-link-cyan{
     color: #31BCCC;
 }

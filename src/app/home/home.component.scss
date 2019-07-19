@@ -8,104 +8,111 @@ section{
     background-size: cover;
     z-index: 1;
 }
-
 .container{
     position: relative;
     width:70%;
     height: 22%;
     border-radius: 10px;
-    background-color:rgba(0,0,0,0.4);
-    transition: all .5s ease-in-out;
-    margin: 2% 2% 3% 2%;
-    padding:2%;
+    background-color:rgba(0,0,0,0.5);
+    transition: all .3s ease-in-out;
+    margin: 2% 2% 3% 2%;   
+    padding:0; 
     cursor: pointer;
 }
-
-.c-left{
-    padding-left:3%;
+.row{
+    height:80%;
 }
-.c-right{
-    padding-right:3%;
-}
-
-.title{
+.col{
+    margin-top:2%;
     height: 100%;
-    line-height: 100%;
-    max-width: 70%;
-    padding:0;
-    margin:0;
 }
+.row-content{
+    height:100%;
+    padding:2% 2% 2% 2%;
+}
+
+.anim-logo{
+    width:33%;
+    height:100%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding:0;
+}
+.title{
+    width: 66%;
+    padding:0;
+}
+
 .right{
-    padding-left:45%;
+    float:right;
 }
-/*.subtitle{
-    height:40%;
-    max-width: 70%;
-    padding:0;
-    margin:0;
-}*/
+.left{
+    float:left;
+}
 
 h1{
     font-family:  comfortaa;
     color: #FFF;
     text-align: center;
-    font-size:1.8vw;
+    font-size:2vw;
+    margin-top:12px;
+    margin-bottom:12px;
 }
-/*h2{
-    font-family: roboto;
-    font-weight: 400;
-    color:#FFF;
+p{
+    color: #FFF;
     text-align: center;
-    font-size:1.5vw;
-    margin:0
-}*/
-
-.row{
-    height:80%;
-}
-.row-content{
-    height:100%;
+    font-size: 1.4vw;
+    font-weight: 300;
+    margin:0;
 }
 
-.col{
-    margin-top:2%;
-    height: 100%;
+
+.carousel-item{
+    transition: all 1.5s ease-in-out;
 }
 
-.anim-logo{
-    height:100%;
-    background-size:contain;
-    background-repeat: no-repeat;
-}
+
 .logo-e{
     background-image: url("../../assets/images/logo-experiences.png");
-    background-position: left;
+    background-position: center;
+    float:left;
 }
 .logo-f{
     background-image: url("../../assets/images/logo-formations.png");
-    background-position: right;
+    background-position: center;
+    float:right;
 }
 .logo-c{
     background-image: url("../../assets/images/logo-competences.png");
-    background-position: left;
+    background-position: center;
+    float:left;
 }
 .logo-p{
     background-image: url("../../assets/images/logo-a-propos.png");
-    background-position: right;
+    background-position: center;
+    float:right;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1025px){
     section{
         background-image: url('../../assets/images/background-portrait.jpg');
     }
     h1{
-        font-size:3vh;
-    } 
+        font-size:5vw;
+    }
+    p{
+        font-size:3.5vw;
+    }
+    .empty-col{
+        display:none;
+    }
 }
 
 .container:hover{
-    transform: translate(4px,-4px);
+    transform: scale(1.05);
+    background-color:rgba(0,0,0,0.6);
 }
+
 
 .experiences{
     box-shadow: 5px -5px 10px #4669a5;

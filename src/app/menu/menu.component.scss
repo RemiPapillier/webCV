@@ -1,6 +1,6 @@
 
 .nav{
-    background-color:rgba(0,0,0,0.4);
+    background-color:rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
     min-height: 60px;
@@ -44,7 +44,7 @@
 }
 
 .navbar{
-    background-color:rgba(0,0,0,0.4);
+    background-color:rgba(0,0,0,0.5);
 }
 
 .navbar .navbar-toggler-icon {
@@ -55,13 +55,13 @@
     padding-left:5%;
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 1025px){
     .nav{
       display:none;
     } 
 }
     
-@media screen and (min-width: 940px){
+@media screen and (min-width: 1025px){
     .navbar{
       display: none;
     }

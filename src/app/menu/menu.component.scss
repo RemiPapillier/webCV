@@ -1,12 +1,12 @@
 
 .nav{
-    /*position: fixed;
+    position: fixed;
     top:0;
-    width:100%;*/
-    background-color:rgba(0,0,0,0.55);
+    width:100%;
+    background-color:rgba(0,0,0,0);
     display: flex;
     justify-content: center;
-    min-height: 60px;
+    min-height: 70px;
     z-index: 5;
 }
 
@@ -24,7 +24,7 @@
 
 .nav-link{
     font-family: comfortaa;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     color: #FFF;
     text-shadow: 1px 1px 2px black;
 }
@@ -49,7 +49,7 @@
 }
 
 .navbar{
-    background-color:rgba(0,0,0,0.55);
+    background-color: rgb(54, 54, 54);
 }
 
 .navbar .navbar-toggler-icon {
@@ -72,38 +72,10 @@
     }
 }
 
-.colapse:active{
-    background-color: red;
+.active-link{
+    color: cyan;
 }
-.active-link-cyan{
-    color: #31BCCC;
-}
-.active-link-lightblue{
-    color: rgb(193, 239, 255);
-}
-.active-link-darkblue{
-    color: #5675a7;
-}
-.active-link-yellow{
-    color: #FFDD83;
-}
-
 
 .nav-link-burger:hover{
     text-decoration: none;
-}
-.exp:hover{
-    color: #5675a7;
-}
-
-.form:hover{
-    color: rgb(193, 239, 255);
-}
-
-.prop:hover{
-    color: #31BCCC;
-}
-
-.comp:hover{
-    color: #FFDD83;
 }

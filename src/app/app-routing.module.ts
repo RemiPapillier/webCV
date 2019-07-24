@@ -8,8 +8,8 @@ import { ProposComponent } from './propos/propos.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'cv', pathMatch: 'full' },
-  { path: 'cv', component: HomeComponent },
+  //{ path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
   { path: 'experiences', component: ExperienceComponent },
   { path: 'formations', component: FormationComponent },
   { path: 'competences', component: CompetenceComponent },

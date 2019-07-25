@@ -159,7 +159,7 @@ body {
 
       &:hover {
           width: 100% !important;
-          height:50vh !important;
+          height:60vh !important;
 
           .tl-year{
               top:20%;
@@ -168,5 +168,9 @@ body {
   }
   .tl-content{
       top:40%;
+
+      p{
+        font-size: 1.10rem;
+      }
   }
 }

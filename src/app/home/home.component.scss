@@ -1,7 +1,7 @@
 
 #centered-circle{
     position:fixed;
-    background-image: url('../../assets/images/portrait_carre.jpg');
+    background-image: url('../../assets/images/portrait.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -15,7 +15,7 @@
     margin-left: -35vh;
     border:1px solid black;
     z-index: 5;
-    filter: grayscale(100%);
+    //filter: grayscale(100%);
  }
  #photo{
     position:fixed;
@@ -65,7 +65,7 @@
     width:50%;
     height: 50%;
     transition: filter 0.8s, width 0.8s,height 0.8s;
-    filter: grayscale(100%);
+    filter: grayscale(70%);
     cursor: pointer;
  
      &:hover{

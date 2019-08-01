@@ -26,6 +26,7 @@ body {
   color: #fff;
   overflow: hidden;
   transition: width 0.5s ease;
+  box-shadow: 0 -5px 15px 0px rgba(0,0,0,0.5);
   
   &:before, &:after {
     transform: translate3d(0, 0, 0);
@@ -36,7 +37,7 @@ body {
   }
 
   &:after {
-    background: transparentize(#031625, 0.70);
+    background: transparentize(#031625, 0.90);
     opacity: 1;
     transition: opacity 0.5s ease;
   }
@@ -73,7 +74,7 @@ body {
     }
 
     .tl-bg {
-      filter: grayscale(0);
+      filter: brightness(110%);
     }
   }
 }
@@ -129,7 +130,7 @@ body {
   background-size: cover;
   background-position: center center;
   transition: filter 0.5s ease;
-  filter: grayscale(60%);
+  filter: brightness(70%);
 }
 
 .utbm{

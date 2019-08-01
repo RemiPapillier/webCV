@@ -11,7 +11,7 @@ body {
 
   &:hover {
     .tl-item {
-      width: 23.3333%;
+      width: 22%;
     }
   }
 }
@@ -35,7 +35,7 @@ body {
   }
 
   &:after {
-    background: transparentize(#031625, 0.70);
+    background: transparentize(#031625, 0.90);
     opacity: 1;
     transition: opacity 0.5s ease;
   }
@@ -49,7 +49,7 @@ body {
   }
 
   &:hover {
-    width: 30% !important;
+    width: 34% !important;
     .tl-logo{
       visibility: hidden;
       opacity: 0;
@@ -76,7 +76,7 @@ body {
     }
 
     .tl-bg {
-      filter: grayscale(0);
+      filter: brightness(110%);
     }
   }
 }
@@ -152,12 +152,9 @@ body {
   background-size: cover;
   background-position: center center;
   transition: filter 0.5s ease;
-  filter: grayscale(60%);
+  filter: brightness(80%);
 }
 
-.ixblue{
-  background-position: left;
-}
 .l-ixblue{
   height: 12%;
 }
@@ -184,6 +181,7 @@ body {
       height: 33.3333vh;
       min-height: 0px;
       transition: height 0.5s ease;
+      box-shadow: 0 -5px 15px 0px rgba(0,0,0,0.6);
 
       &:hover {
           width: 100% !important;

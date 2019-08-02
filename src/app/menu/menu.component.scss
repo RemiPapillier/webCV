@@ -3,11 +3,16 @@
     position: fixed;
     top:0;
     width:100%;
-    background-color:rgba(0,0,0,0);
+    background: rgba(0,0,0,0);
+    //background:#263238;
     display: flex;
     justify-content: center;
     min-height: 70px;
     z-index: 5;
+
+    .active{
+        background:black !important;
+    }
 }
 
 .nav-item{

@@ -13,14 +13,81 @@
   background-image: url('../../assets/images/back-propos.jpg');
   background-position: center;
   background-size: cover;
-  filter: brightness(90%);
 }
 
 .container{
   position: relative;
-  height: 60%;
-  padding-top: 90px;
+  padding-top: 140px;
+  padding-bottom: 70px;
+  padding-left: 0;
+  padding-right: 0;
+
+  .col-md-8{
+    padding-left: 0;
+  }
+
+  .presentation{
+    font-family: roboto;
+    color: #fff;
+    padding-top:20px;
+    padding-bottom: 20px;
+  }
+
+  h1{
+    line-height: 3.4rem;
+    font-size: 2.6rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    text-shadow: 1px 8px 8px black;
+  }
+
+  h2{
+    line-height: 2.6rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-shadow: 1px 8px 8px black;
+  }
+
+  p{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .links{
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    font-family: roboto;
+    font-size:1.4rem;
+    text-shadow: 1px 1px 2px black;
+    padding-top:60px;
+    padding-right: 0;
+    border-left: 2px solid cyan;
+  }
+
+  .cv-logo{
+    margin:15px;
+  }
+
 }
+
+.title{
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+  position: relative;
+  width:100%;
+  color: #FFF;
+  font-family: comfortaa;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 30px;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
 .text{
   font-size: 32px;
   color: #fff;
@@ -34,6 +101,7 @@ body {
 
 #timeline {
   display: flex;
+  background: rgb(2, 3, 24);
 
 
   &:hover {
@@ -47,8 +115,8 @@ body {
   transform: translate3d(0, 0, 0);
   position: relative;
   width: 33.3333%;
-  height: 40vh;
-  box-shadow: 0 -5px 20px 0px rgba(0,0,0,0.75);
+  height: 50vh;
+  box-shadow: 1px 0px 10px 1px rgba(0,0,0,1);
   color: #fff;
   overflow: hidden;
   transition: width 0.5s ease, height 0.5s ease;
@@ -62,13 +130,13 @@ body {
   }
 
   &:after {
-    background: transparentize(#031625, 0.90);
+    background: transparentize(#031625, 1);
     opacity: 1;
     transition: opacity 0.5s ease;
   }
 
   &:before {
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 80%);
     z-index: 1;
     opacity: 0;
     transform: translate3d(0, 0, 0) translateY(50%);
@@ -113,7 +181,7 @@ body {
   z-index: 1;
   text-align: center;
   margin: 0 1.618em;
-  top: 55%;
+  top: 35%;
   opacity: 0;
   
   h1 {
@@ -135,6 +203,7 @@ body {
   top: 55%;
   left: 50%;
   width:100%;
+  overflow: visible;
   transform: translateX(-50%) translateY(-50%);
   z-index: 1;
   text-align: center;
@@ -143,7 +212,7 @@ body {
   p {
     font-family: comfortaa;
     text-shadow: 2px 2px 2px black;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 0;
   }
 }
@@ -186,11 +255,53 @@ body {
           }
       } 
   }
-  .tl-content{
-      top:40%;
+ 
 
-      p{
-        font-size: 1.10rem;
-      }
+  .container{
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+
+    .links{padding-top: 70px;}
+  }
+
+
+}
+
+@media screen and (max-width: 767px){
+  .tl-content{
+
+    h1{
+      font-size: 1.25rem;
+    }
+    p{
+      font-size: 1.10rem;
+    }
+}
+  .container{
+    padding-bottom: 30px;
+
+    .links{
+      display: none;
+    }
+    .presentation{
+      padding:0;
+    }
+    h1{
+      line-height: 2.4rem;
+      font-size:1.8rem;
+    }
+    h2{
+      line-height: 2rem;
+      font-size: 1.2rem;
+    }
+    p{
+      line-height: 1.7rem;
+      font-size: 1.1rem;
+    }
+  }
+  .title{
+    margin-top:0;
   }
 }

@@ -49,4 +49,10 @@
         </ul>
     </div>
 </nav>
+
+<script>
+    $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 10);
+    });
+</script>
 <!--  BURGER MENU -->

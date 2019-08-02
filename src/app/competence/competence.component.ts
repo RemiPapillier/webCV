@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare const myTest:any;
 
 @Component({
   selector: 'app-competence',
@@ -11,5 +12,4 @@ export class CompetenceComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

@@ -8,6 +8,7 @@ body {
 #timeline {
   display: flex;
   background-color: #031625;
+  margin-top: -70px;
 
   &:hover {
     .tl-item {
@@ -168,6 +169,7 @@ body {
 @media screen and (max-width: 1025px){
   #timeline{
       display:block;
+      margin-top:0;
 
       &:hover {
         .tl-item {
@@ -219,6 +221,9 @@ body {
 }
 
 @media screen and (max-width: 770px){
+  #timeline{
+    margin-top: 0;
+  }
   .tl-content{
     top:30%;
     margin: 0 1em;

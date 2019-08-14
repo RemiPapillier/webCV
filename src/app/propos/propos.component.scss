@@ -2,6 +2,7 @@
   position: relative;
   width:100%;
   height: 100%;
+  margin-top: -70px;
 }
 
 #main::before{
@@ -81,7 +82,7 @@
   width:100%;
   color: #FFF;
   font-family: comfortaa;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   text-align: center;
   margin-top: 30px;
   padding-top:20px;
@@ -230,6 +231,9 @@ body {
 
 
 @media screen and (max-width: 1025px){
+  #main{
+    margin-top:0;
+  }
   #timeline{
       display:block;
 
@@ -270,6 +274,9 @@ body {
 }
 
 @media screen and (max-width: 767px){
+  #main{
+    margin-top:0;
+  }
   .tl-content{
 
     h1{

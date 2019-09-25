@@ -10,7 +10,7 @@
   position: absolute;
   top:0; left:0;
   width:100%;
-  height: 100%;
+  height: 120%;
   background-image: url('../../assets/images/back-propos.jpg');
   background-position: center;
   background-size: cover;
@@ -22,10 +22,6 @@
   padding-bottom: 70px;
   padding-left: 0;
   padding-right: 0;
-
-  .col-md-8{
-    padding-left: 0;
-  }
 
   .presentation{
     font-family: roboto;

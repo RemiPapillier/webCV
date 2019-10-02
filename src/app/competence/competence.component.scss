@@ -1,25 +1,214 @@
-
-
-.container{
-    padding:20px;
-    margin-top:5vh;
+#main{
+    position: relative;
+    width:100%;
+    height: 100%;
+    margin-top: -71px;
 }
+
+#main::before{
+    content:"";
+    position: absolute;
+    top:0; left:0;
+    width:100%;
+    height: 100%;
+    background-image: url('../../assets/images/back-comp.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: brightness(80%);
+}
+
+.row{
+    padding-top: 100px;
+    height: 100%;
+    overflow: scroll;
+}
+.col-md-6{
+    height: 100%;
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+
+p, h1, h2 {
+    text-align: center;
+}
+
 
 h1{
-    font-size: 2.4vw;
-    text-align: center;
+    padding-top: 40px;
+    font-size: 2.4rem;
     font-family: comfortaa;
+    text-shadow: 0 13px 9px black; 
 }
 
-.title{
-    padding-bottom: 10px;
-    border-bottom: 2px solid black;
+h2{
+    color: cyan;
+    text-shadow: 1px 1px 1px black;
+    font-weight: 450;
 }
 
-.content{
-    height:60vh;
-    width:100%;
+//BEGINNING FLIP CARD
+.flip {
+    position: relative;
+
+}
+  
+.flip > .front,
+.flip > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 1s;
+    transition-property: transform, opacity;
+}
+.flip > .front {
+    transform: rotateY(0deg);
+    margin:0;
+    width: 100%;
+    height: 100%;
+}
+.flip > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip:hover{
+    box-shadow: none;
+}
+.flip:hover > .front {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+.flip:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.flip > .back {
+    transform: rotateX(-180deg);
+}
+  .flip:hover > .front {
+    transform: rotateX(180deg);
+}
+.flip:hover > .back {
+    transform: rotateX(0deg);
+}
+  
+.flip {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 44%;
+}
+.up{
+    margin-bottom: 40px;
+}
+  
+.left{
+      margin-right: 20px;
+}
+  
+.right{
+      margin-left: 20px;
+}
+  
+.flip > .front,
+.flip > .back {
+    color: white;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 1em 2em;
+    background: rgba(0,0,0,0.8);
     border-radius: 10px;
-    background-color: rgba(0,0,0,0.5);
-    margin-top: 15px;
 }
+.flip > .front p,
+.flip > .back p {
+    font-size: 1rem;
+    line-height: 160%;
+    color: #fff;
+}
+
+//END FLIP CARD
+
+
+//BEGINNING ARROW SCROLL DOWN
+.arrow {
+    opacity: 0;
+    position: absolute;
+        left: 47%;
+        top: 97%;
+    transform-origin: 50% 50%;
+    transform: translate3d(-50%, -50%, 0);
+    display: none;
+}
+
+.arrow-first {
+    animation: arrow-movement 2s ease-in-out infinite;
+}
+.arrow-second {
+    animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 2px; 
+    position: absolute;
+        bottom: 0;
+        left: 0;
+    width: 20px;
+}
+
+.arrow:before {
+    transform: rotate(45deg) translateX(-23%);
+    transform-origin: top left;
+}
+
+.arrow:after {
+    transform: rotate(-45deg) translateX(23%);
+    transform-origin: top right;
+}
+
+@keyframes arrow-movement {
+    0% { 
+        opacity: 0;
+        top: 95%;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% { 
+        opacity: 0;
+    }
+}
+//END ARROW SCROLL DOWN
+
+@media screen and (max-width: 1025px){
+    .flip{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .up{
+        margin-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .arrow{
+        display: initial;
+    }
+    .flip{
+        width: 70%;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+}
+
+
+

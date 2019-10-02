@@ -1,11 +1,5 @@
 
 
-body {
-  font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif; 
-  font-size: 16px;
-  line-height: 1.75;
-}
-
 #timeline {
   display: flex;
   background-color: #031625;
@@ -53,6 +47,11 @@ body {
 
   &:hover {
     width: 40% !important;
+
+    .tl-logo{
+      visibility: hidden;
+      opacity: 0;
+    }
     
     &:after {
       opacity: 0;
@@ -124,6 +123,21 @@ body {
   }
 }
 
+.tl-logo {
+  visibility: visible;
+  opacity: 1;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top:70%;
+  width: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+
 .tl-bg {
   transform: translate3d(0, 0, 0);
   position: absolute;
@@ -141,6 +155,16 @@ body {
 
 .lycee{
   background-position: left;
+}
+
+.l-lycee{
+  height: 15%;
+}
+.l-utbm{
+  height: 27%;
+}
+.l-iut{
+  height:9%;
 }
 
 @media screen and (max-width: 1025px){
@@ -169,6 +193,16 @@ body {
               top:20%;
           }
       } 
+  }
+  .tl-logo{
+    top:76%;
+    height:20%;
+  }
+  .l-utbm{
+    height: 40%;
+  }
+  .l-iut{
+    height: 12%;
   }
   .tl-content{
       top:40%;

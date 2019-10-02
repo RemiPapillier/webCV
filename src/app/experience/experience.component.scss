@@ -1,9 +1,4 @@
 
-body {
-  font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif; 
-  font-size: 16px;
-  line-height: 1.75;
-}
 
 #timeline {
   display: flex;
@@ -92,7 +87,6 @@ body {
   opacity: 0;
   
   h1 {
-    //font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     color: cyan;
     text-shadow: 1px 1px 1px black;

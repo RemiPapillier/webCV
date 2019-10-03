@@ -7,7 +7,8 @@
 
   &:hover {
     .tl-item {
-      width: 22%;
+      //width: 22%;
+      width: 30%;
     }
   }
 }
@@ -15,7 +16,8 @@
 .tl-item {
   transform: translate3d(0, 0, 0);
   position: relative;
-  width: 25%;
+  //width: 25%;
+  width: 33.3333%;
   height: 100vh;
   min-height: 600px;
   color: #fff;
@@ -45,7 +47,9 @@
   }
 
   &:hover {
-    width: 34% !important;
+    //width: 34% !important;
+    width: 40% !important;
+    
     .tl-logo{
       visibility: hidden;
       opacity: 0;

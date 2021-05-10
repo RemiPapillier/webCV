@@ -5,7 +5,6 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
@@ -13,7 +12,6 @@ import { ExperienceComponent } from './experience/experience.component';
 import { FormationComponent } from './formation/formation.component';
 import { CompetenceComponent } from './competence/competence.component';
 import { ProposComponent } from './propos/propos.component';
-import { ReserveComponent } from './reserve/reserve.component';
 
 
 const routes: Routes = [
@@ -28,14 +26,12 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
     MenuComponent,
     HomeComponent,
     ExperienceComponent,
     FormationComponent,
     CompetenceComponent,
     ProposComponent,
-    ReserveComponent
   ],
   imports: [
     BrowserModule,
